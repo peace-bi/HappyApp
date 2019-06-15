@@ -4,6 +4,7 @@
     "paths": {
       "pages/*": ["src/pages/*"],
       "components/*": ["src/components/*"],
+      "core/*": ["src/core/*"]
     },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,

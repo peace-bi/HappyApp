@@ -10,6 +10,7 @@
 
 import { Home } from 'pages/Home'
 import React from 'react'
+import * as RNLocalize from 'react-native-localize'
 import { useScreens } from 'react-native-screens'
 import { createAppContainer, createStackNavigator } from 'react-navigation'
 
@@ -45,6 +46,20 @@ const AppNavigator = createStackNavigator(
 const AppContainer = createAppContainer(AppNavigator)
 
 export default class App extends React.Component {
+  constructor(props: any) {
+    super(props)
+
+    RNLocalize.addEventListener('change', this.handleLocalizationChange)
+  }
+
+  handleLocalizationChange = () => {
+    // Implment change language
+  }
+
+  componentWillUnmount() {
+    RNLocalize.removeEventListener('change', this.handleLocalizationChange)
+  }
+
   render() {
     return <AppContainer />
   }

@@ -1,3 +1,4 @@
+import { Localize } from 'core/localize'
 import React, { useState } from 'react'
 import { View } from 'react-native'
 import { NavigationStateRoute } from 'react-navigation'
@@ -21,7 +22,9 @@ export function Home() {
   return (
     <View>
       <StyledView>
-        <StyledText>{`Hello Bi: ${navigationState.routeName} ${count}`}</StyledText>
+        <StyledText>{`${Localize.t('hello')} Bi: ${
+          navigationState.routeName
+        } ${count}`}</StyledText>
       </StyledView>
       <StyledButton
         title="Hello"

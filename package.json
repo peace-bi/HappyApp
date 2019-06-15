@@ -13,9 +13,12 @@
     "format": "tslint --fix --project ./tsconfig.json && prettier --write 'src/**/*.ts{,x}'"
   },
   "dependencies": {
+    "@types/i18n-js": "^3.0.1",
+    "i18n-js": "^3.3.0",
     "react": "16.8.3",
     "react-native": "0.59.4",
     "react-native-gesture-handler": "^1.1.0",
+    "react-native-localize": "^1.1.3",
     "react-native-screens": "^1.0.0-alpha.22",
     "react-navigation": "^3.8.1",
     "react-navigation-hooks": "https://github.com/react-navigation/react-navigation-hooks.git",
