@@ -30,6 +30,7 @@
     "jest": "^24.7.1",
     "metro-react-native-babel-preset": "^0.53.1",
     "react-test-renderer": "16.8.3",
+    "ts-jest": "^24.0.2",
     "tslint": "^5.16.0",
     "tslint-react": "^4.0.0",
     "tslint-react-hooks": "^2.1.0",
@@ -37,5 +38,8 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "resolutions": {
+    "react-native-gesture-handler": "^1.1.0"
   }
 }
