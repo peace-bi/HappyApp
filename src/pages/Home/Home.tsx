@@ -23,7 +23,10 @@ export function Home() {
       <StyledView>
         <StyledText>{`Hello Bi: ${navigationState.routeName} ${count}`}</StyledText>
       </StyledView>
-      <StyledButton title="Hello" onPress={() => setCount((prev) => prev + 1)} />
+      <StyledButton
+        title="Hello"
+        onPress={() => setCount((prev) => prev + 1)}
+      />
     </View>
   )
 }

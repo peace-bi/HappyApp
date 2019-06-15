@@ -16,30 +16,32 @@ import { createAppContainer, createStackNavigator } from 'react-navigation'
 // tslint:disable-next-line:react-hooks-nesting
 useScreens()
 
-const AppNavigator = createStackNavigator({
-  Home: {
-    screen: Home,
-    navigationOptions: () => ({
-      title: `Home`,
-      headerBackTitle: 'A much too long text for back button from B to A',
-      headerTruncatedBackTitle: `to A`
-    }),
-  }
-},
-{
-  initialRouteName: 'Home',
-  /* The header config from HomeScreen is now here */
-  defaultNavigationOptions: {
-    title: 'Nancy',
-    headerStyle: {
-      backgroundColor: '#f4511e',
-    },
-    headerTintColor: '#fff',
-    headerTitleStyle: {
-      fontWeight: 'bold',
-    },
+const AppNavigator = createStackNavigator(
+  {
+    Home: {
+      screen: Home,
+      navigationOptions: () => ({
+        title: 'Home',
+        headerBackTitle: 'A much too long text for back button from B to A',
+        headerTruncatedBackTitle: 'to A'
+      })
+    }
   },
-})
+  {
+    initialRouteName: 'Home',
+    /* The header config from HomeScreen is now here */
+    defaultNavigationOptions: {
+      title: 'Nancy',
+      headerStyle: {
+        backgroundColor: '#f4511e'
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold'
+      }
+    }
+  }
+)
 const AppContainer = createAppContainer(AppNavigator)
 
 export default class App extends React.Component {
