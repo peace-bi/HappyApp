@@ -1,4 +1,4 @@
-package com.happyapp;
+package com.eddibook;
 
 import android.app.Application;
 

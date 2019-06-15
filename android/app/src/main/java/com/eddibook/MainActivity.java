@@ -1,4 +1,4 @@
-package com.happyapp;
+package com.eddibook;
 
 import android.os.Bundle;
 import com.facebook.react.ReactFragmentActivity;
@@ -19,7 +19,7 @@ public class MainActivity extends ReactFragmentActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "HappyApp";
+        return "EddiBook";
     }
 
    @Override

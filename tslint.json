@@ -5,6 +5,7 @@
     "tslint-react-hooks"
   ],
   "rules": {
+    "jsx-no-lambda": false,
     "callable-types": true,
     "class-name": true,
     "comment-format": [true, "check-space"],

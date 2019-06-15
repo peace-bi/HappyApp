@@ -90,7 +90,7 @@ exports[`renders correctly 1`] = `
                     ]
                   }
                 >
-                  Hello you: Home 0
+                  Hello Bi: Home 0
                 </Text>
               </View>
               <View
